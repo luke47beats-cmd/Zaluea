@@ -1,8 +1,19 @@
 var games = [
-    {name: "Flappy Bird", path: "games/flappybird/index.html"}
+    {name: "Flappy Bird", path: "games/flappybird/index.html"},
+    {name: "2048", path: "games/2048/index.html"},
+    {name: "Snake", path: "games/snake/index.html"},
+    {name: "Pac-Man", path: "games/pacman/index.html"},
+    {name: "Tetris", path: "games/tetris/index.html"},
+    {name: "Pong", path: "games/pong/index.html"},
+    {name: "Space Invaders", path: "games/spaceinvaders/index.html"},
+    {name: "Breakout", path: "games/breakout/index.html"},
+    {name: "Dino Runner", path: "games/dino/index.html"},
+    {name: "Tic Tac Toe", path: "games/tictactoe/index.html"},
+    {name: "Memory Game", path: "games/memorygame/index.html"}
 ];
 
 var glist = document.getElementById("gameslist");
+
 
 for (let item of games) {
     let a = document.createElement("a");
