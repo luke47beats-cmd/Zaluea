@@ -13,13 +13,151 @@
 }
 
 body {
-    background: rgb(22, 22, 22);
+    background:
+        /* Scattered stars — tiny bright pinpoints across the field */
+        radial-gradient(1px 1px at  4%  8%, rgba(255,255,255,0.90) 0%, transparent 100%),
+        radial-gradient(1px 1px at 11% 23%, rgba(255,255,255,0.75) 0%, transparent 100%),
+        radial-gradient(1px 1px at 18%  3%, rgba(255,255,255,0.85) 0%, transparent 100%),
+        radial-gradient(1px 1px at 26% 47%, rgba(255,255,255,0.70) 0%, transparent 100%),
+        radial-gradient(1px 1px at 33% 15%, rgba(255,255,255,0.90) 0%, transparent 100%),
+        radial-gradient(1px 1px at 41% 62%, rgba(255,255,255,0.65) 0%, transparent 100%),
+        radial-gradient(1px 1px at 48%  9%, rgba(255,255,255,0.80) 0%, transparent 100%),
+        radial-gradient(1px 1px at 55% 38%, rgba(255,255,255,0.75) 0%, transparent 100%),
+        radial-gradient(1px 1px at 63% 74%, rgba(255,255,255,0.85) 0%, transparent 100%),
+        radial-gradient(1px 1px at 70% 21%, rgba(255,255,255,0.70) 0%, transparent 100%),
+        radial-gradient(1px 1px at 77% 55%, rgba(255,255,255,0.90) 0%, transparent 100%),
+        radial-gradient(1px 1px at 84% 12%, rgba(255,255,255,0.65) 0%, transparent 100%),
+        radial-gradient(1px 1px at 91% 83%, rgba(255,255,255,0.80) 0%, transparent 100%),
+        radial-gradient(1px 1px at 97% 44%, rgba(255,255,255,0.75) 0%, transparent 100%),
+        radial-gradient(1px 1px at  7% 67%, rgba(255,255,255,0.85) 0%, transparent 100%),
+        radial-gradient(1px 1px at 15% 91%, rgba(255,255,255,0.70) 0%, transparent 100%),
+        radial-gradient(1px 1px at 22% 78%, rgba(255,255,255,0.90) 0%, transparent 100%),
+        radial-gradient(1px 1px at 30% 33%, rgba(255,255,255,0.65) 0%, transparent 100%),
+        radial-gradient(1px 1px at 38% 88%, rgba(255,255,255,0.80) 0%, transparent 100%),
+        radial-gradient(1px 1px at 45% 52%, rgba(255,255,255,0.75) 0%, transparent 100%),
+        radial-gradient(1px 1px at 52% 97%, rgba(255,255,255,0.85) 0%, transparent 100%),
+        radial-gradient(1px 1px at 59% 17%, rgba(255,255,255,0.70) 0%, transparent 100%),
+        radial-gradient(1px 1px at 66% 42%, rgba(255,255,255,0.90) 0%, transparent 100%),
+        radial-gradient(1px 1px at 73% 69%, rgba(255,255,255,0.65) 0%, transparent 100%),
+        radial-gradient(1px 1px at 80% 28%, rgba(255,255,255,0.80) 0%, transparent 100%),
+        radial-gradient(1px 1px at 87% 95%, rgba(255,255,255,0.75) 0%, transparent 100%),
+        radial-gradient(1px 1px at 94% 61%, rgba(255,255,255,0.85) 0%, transparent 100%),
+        radial-gradient(2px 2px at 20% 40%, rgba(255,240,200,0.80) 0%, transparent 100%),
+        radial-gradient(2px 2px at 60% 80%, rgba(200,220,255,0.80) 0%, transparent 100%),
+        radial-gradient(2px 2px at 80% 10%, rgba(255,200,240,0.80) 0%, transparent 100%),
+        radial-gradient(2px 2px at 35% 70%, rgba(220,200,255,0.80) 0%, transparent 100%),
+        /* Outer spiral arm glow — blue-purple haze sweeping around the disc */
+        conic-gradient(
+            from 0deg at 52% 48%,
+            transparent                    0deg,
+            rgba( 60,  20, 120, 0.18)     20deg,
+            rgba( 80,  40, 180, 0.30)     45deg,
+            rgba(140,  60, 220, 0.22)     70deg,
+            transparent                   90deg,
+            rgba( 20,  60, 160, 0.15)    110deg,
+            rgba( 40, 100, 200, 0.28)    135deg,
+            rgba( 80, 140, 230, 0.20)    160deg,
+            transparent                  180deg,
+            rgba(100,  20, 140, 0.18)    200deg,
+            rgba(160,  50, 200, 0.30)    225deg,
+            rgba(200,  80, 160, 0.22)    250deg,
+            transparent                  270deg,
+            rgba( 30,  80, 180, 0.15)    290deg,
+            rgba( 60, 120, 220, 0.28)    315deg,
+            rgba(100, 160, 240, 0.20)    340deg,
+            transparent                  360deg
+        ),
+        /* Inner spiral arms — warmer pinks and golds closer to the core */
+        conic-gradient(
+            from 30deg at 52% 48%,
+            transparent                    0deg,
+            rgba(200,  80, 120, 0.20)     25deg,
+            rgba(240, 120,  60, 0.28)     50deg,
+            rgba(255, 180,  80, 0.22)     75deg,
+            transparent                   95deg,
+            rgba(180,  60, 160, 0.18)    115deg,
+            rgba(220,  90, 200, 0.26)    140deg,
+            rgba(255, 140, 180, 0.20)    165deg,
+            transparent                  185deg,
+            rgba(200,  80,  60, 0.18)    205deg,
+            rgba(240, 140,  40, 0.28)    230deg,
+            rgba(255, 200, 100, 0.22)    255deg,
+            transparent                  275deg,
+            rgba(160,  40, 140, 0.18)    295deg,
+            rgba(210,  80, 180, 0.26)    320deg,
+            rgba(255, 120, 160, 0.20)    345deg,
+            transparent                  360deg
+        ),
+        /* Galactic disc — broad elliptical haze of the galaxy plane */
+        radial-gradient(
+            ellipse 70% 28% at 52% 48%,
+            rgba(120,  80, 200, 0.55)   0%,
+            rgba( 80,  40, 160, 0.40)  25%,
+            rgba( 40,  20, 100, 0.25)  55%,
+            transparent               100%
+        ),
+        /* Dust lane — dark band cutting across the mid-plane */
+        radial-gradient(
+            ellipse 60% 6% at 52% 50%,
+            rgba(10, 5, 20, 0.60)   0%,
+            rgba(10, 5, 20, 0.30)  50%,
+            transparent            100%
+        ),
+        /* Outer nebula haze — diffuse blue-purple cloud filling the outer disc */
+        radial-gradient(
+            ellipse 90% 55% at 52% 48%,
+            rgba( 30,  10,  80, 0.50)   0%,
+            rgba( 20,   5,  60, 0.35)  35%,
+            rgba( 10,   2,  30, 0.15)  70%,
+            transparent               100%
+        ),
+        /* Pink/magenta nebula bloom — upper-left quadrant */
+        radial-gradient(
+            ellipse 45% 35% at 20% 30%,
+            rgba(180,  40, 120, 0.22)   0%,
+            rgba(120,  20,  80, 0.12)  50%,
+            transparent               100%
+        ),
+        /* Teal/cyan nebula bloom — lower-right quadrant */
+        radial-gradient(
+            ellipse 40% 30% at 78% 72%,
+            rgba( 20, 120, 180, 0.20)   0%,
+            rgba( 10,  80, 130, 0.10)  50%,
+            transparent               100%
+        ),
+        /* Galactic core outer glow — warm amber-gold halo */
+        radial-gradient(
+            ellipse 22% 18% at 52% 48%,
+            rgba(255, 200,  80, 0.55)   0%,
+            rgba(220, 120,  40, 0.40)  30%,
+            rgba(160,  60,  20, 0.20)  60%,
+            transparent               100%
+        ),
+        /* Galactic core inner glow — intense white-gold nucleus */
+        radial-gradient(
+            ellipse 8% 6% at 52% 48%,
+            rgba(255, 255, 240, 0.95)   0%,
+            rgba(255, 240, 160, 0.80)  25%,
+            rgba(255, 200,  80, 0.60)  55%,
+            rgba(200, 100,  20, 0.30)  80%,
+            transparent               100%
+        ),
+        /* Deep space base — near-black with a faint indigo tint */
+        radial-gradient(
+            ellipse 140% 140% at 50% 50%,
+            rgba( 8,  4, 22, 1.00)   0%,
+            rgba( 4,  2, 12, 1.00)  60%,
+            rgba( 2,  1,  6, 1.00) 100%
+        );
+    background-color: rgb(3, 1, 8);
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     margin: 0;
     min-height: 100vh;
     animation: startAnimation ease-in 0.8s;
 }
+
 
 .bar {
     background-color: #272727;
