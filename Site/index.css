@@ -434,3 +434,30 @@ form input:focus {
 .games {
     color: #FFF;
 }
+
+
+/* Rotating tips */
+@keyframes tipFadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0);   }
+}
+
+#rotating-tips {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 15px;
+    text-align: center;
+    margin-top: 18px;
+    padding: 6px 16px;
+    letter-spacing: 0.03em;
+    min-height: 24px;
+    transition: opacity 0.4s ease;
+}
+
+#rotating-tips.tip-visible {
+    opacity: 1;
+    animation: tipFadeIn 0.4s ease forwards;
+}
+
+#rotating-tips.tip-hidden {
+    opacity: 0;
+}
